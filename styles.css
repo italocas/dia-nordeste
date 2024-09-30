@@ -1,0 +1,160 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da viewport */
+}
+
+/* Cabeçalho alinhado à esquerda e navegação à direita */
+header {
+    background: linear-gradient(to right, #c0705b, #a58019);
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10%;
+}
+
+header h1 {
+    text-align: left;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+    margin: 0;
+}
+
+/* Estilos para os links de navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #f15d5d;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/* Estilos para os links de navegação ao passar o mouse */
+nav ul li a:hover {
+    background: #f15d5d;
+}
+
+/* Estilos para o link ativo de navegação */
+nav ul li a.active {
+    border-bottom: 2px solid #FF6347;
+    background: #f15d5d;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 2rem;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    width: 80%;
+    max-width: 800px;
+    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; /* Faz o main crescer para preencher o espaço disponível */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Estilos para imagens responsivas */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.responsive-img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #FF4500;
+    transform: scale(1.05);
+}
+
+/* Ajuste no rodapé para fixá-lo na parte inferior da página */
+footer {
+    background: #ee8b3a;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Animação para fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos para a lista de artistas */
+#artists-content ol {
+    padding: 0;
+    list-style: none;
+}
+
+#artists-content ol li {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 2rem;
+}
+
+.artist-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 1rem 0; /* Espaçamento acima e abaixo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.artist-img:hover {
+    transform: scale(1.05);
+}
